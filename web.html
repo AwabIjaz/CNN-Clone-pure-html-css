@@ -1,0 +1,1084 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+    *{
+        box-sizing: border-box;
+    }
+
+        body{
+            margin: 0px;
+        }
+
+
+        #header{
+            overflow:hidden; position:fixed; top:0; height:7.5%; width:100%; background-color:#060606;
+        }
+
+        #logo,#list,#right {display: inline-block;  zoom: 1; font-size: 12px;}
+
+        #logo{
+
+            width:60px; height:61px; position: fixed; left:9.2%;
+        }
+
+        #logo img{
+
+        max-height: 100%; max-width: 100%;
+            
+        }
+
+
+
+        #list{
+            width:700px; cursor: context-menu; position: fixed; margin-top: 18px; margin-left: 188px;
+        }
+
+       
+
+        #list a{
+
+            padding:1px 5.7px; display:inline-block; text-decoration:none; color:darkgrey;
+            font-family:arial; font-size: 15px; border-right: 1px solid darkgrey; line-height: 0.8;
+        }
+
+        #list a:hover{
+           color:white;
+       }
+
+        #right{
+
+            width:230px; cursor: pointer; position: fixed; margin-top:14px; margin-left:1000px;
+        }
+
+       #right a{
+        font-family: arial; font-size: 15px; text-decoration: none; color:darkgrey; padding: 0px 7px;
+       }
+
+       #right a:hover{
+        color:white;
+       }
+
+
+        #upper{width:1100px; height:596px;  margin-left:124px; margin-top:64px;}
+        #upper2{width:1100px; height:596px; margin-left:124px; margin-top:4px;}
+        #upper3{width:1100px; height:596px; margin-left:124px; margin-top:-10px;}
+        #upper4{width:1100px; height:596px; margin-left:124px; margin-top:-100px;}
+        #upper5{width:1100px; height:596px; margin-left:124px; margin-top:-138px;}
+        #upper6{width:1100px; height:596px; margin-left:124px;}
+        #upper7{width:1100px; margin-left:124px; height:100%;}
+
+        #leftu, #midu, #rtu {font-size: 12px;}
+        #leftu2, #midu2, #rtu2 {font-size: 12px;}
+
+        #leftu{
+            width:41%; height:100%;
+        }
+        #leftu2{
+            width:41.9%; height:100%; margin-top: -596px; margin-left: 320px;
+        }
+        #leftu3{
+            width:32.2%; height:100%; margin-top: -596px; margin-left: 373px;
+        }
+        #leftu4{
+            margin-top:27px; width:70%; height:165%;
+        }
+
+
+        #leftu h1{
+            text-align: center; font-family: arial; font-size:61.5px; line-height: 68px; text-decoration: none;
+        }
+
+        #leftu h1 a, #leftu3 p a{
+            color:black; text-decoration: none;
+        }
+       
+        #leftu4 a{
+            color:white; text-decoration: none;
+        }
+
+
+        #leftu h1 a:hover, #leftu3 p a:hover, #leftu4 a:hover{
+            color:red;
+        }
+
+        #leftu img{
+
+            width:100%; margin-top: -30px;
+        }
+
+        #midu{
+            width:28%; height:100%; margin-top: -596px; margin-left: 468px;
+        }
+        #midu2{
+
+            width:27.3%; height:100%;
+        }
+        #midu3{
+
+            width:32.2%; height:100%;
+        }
+
+
+        #midu h2 a, #midu2 h2 a, #midu3 p a{
+            color:black;
+            text-decoration: none;
+        }
+
+        #midu h2 a:hover, #midu2 h2 a:hover, #midu3 p a:hover{
+            color:red;
+        }
+        
+        #rtu,#rtu2{
+
+            width:28%; height:100%; margin-top: -596px; margin-left: 795px;
+        
+        }
+
+        #rtu3{
+
+            width:32.2%; height:100%; margin-top: -596px; margin-left: 746px;
+        }
+
+        #rtu4{
+
+            width:28%; height:100%; margin-top:-978px; margin-left: 790px;
+        
+        }
+
+
+        #rtu h2 a, #rtu2 p a, #rtu3 p a{
+            color:black;
+            text-decoration: none;
+        }
+
+        #rtu h2 a:hover, #rtu2 p a:hover, #rtu3 h2 a:hover, #rtu3 p a:hover, #rtu4 h2 a:hover{
+            color:red;
+        }
+
+        #rtu3 h2 a{
+            color:#3c3c3c;
+            text-decoration: none;
+        }
+
+        #rtu4 h2 a{
+            color:white;
+            text-decoration: none;
+        }
+
+
+        #rlist div{
+
+            border-top: 1px solid lightgrey; padding: 6px; margin-left: -5px;
+        }
+
+        #rlist div a{
+            text-decoration:none; color:black; font-family:arial; font-size: 15px;
+        }
+
+        #rlist div a:hover, #leftu2 div a:hover{
+         color:red;
+        }
+
+        #midu2 #rlist div, #leftu3 #rlist div, #midu3 #rlist div,#rtu3 #rlist div{
+
+            padding:8px 4px;
+
+        }
+
+         #leftu2 div a{
+
+            font-size: 20px; color:black;
+        }
+
+        #op {
+
+            color:black; text-decoration: none;
+        }
+
+        #op1{
+
+            background: #f4f4f4;
+        }
+
+        #op2{
+
+            background: #e3e3e3;
+        }
+
+        #op:hover #op1{
+
+            background: #e1e1e1;
+
+        }
+
+        #op:hover #op2{
+
+            background: #b0b0b0;
+        }
+
+        #v{
+
+            margin-top: 12px;
+        }
+
+        .vid{
+
+            display: inline-block; width:255px;
+        }
+
+        .ph{
+
+            display: inline-block; width:236px;
+        }
+
+        .pd{
+
+            display: inline-block; width:256px;
+        }
+
+        .vid img, .ph img, .pd img{
+
+            width:100%;
+        }
+
+        .vid p a, .ph p a, .pd p a{
+
+            text-decoration: none; color:black;
+        }
+
+        .vid p a:hover, .ph p a:hover, .pd a:hover{
+
+            color:red;
+        }
+
+        #footer{
+
+            width:100%; height: 565px; background: #1c1c1c; margin-top: -285px;
+
+        }
+
+        #footer2{
+            width:100%; height: 940px; background:#060606; margin-top:-16px;
+            }
+
+        #upper7 div a{
+
+            text-decoration: none; color:white; 
+        }
+
+        #upper7 div a:hover{
+
+            color:white; 
+
+        }
+
+        #upper7 ul{
+
+            padding-right: 52px;
+        }
+
+
+        #upper7 li{
+
+            padding: 7px 0px;
+        }
+
+        #upper7 li a{
+
+            color:darkgrey;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+<div id="header">
+    
+    <div id="logo">
+        <a href="#"><img src="http://logo-logos.com/wp-content/uploads/2016/10/CNN_logo.png"/></a>
+    </div>   
+
+    <div id="list">
+        <a href="#">Regions</a>
+        <a href="#"> U.S. Politics</a>
+        <a href="#">Money</a>
+        <a href="#">Entertainment</a>
+        <a href="#">Tech</a>
+        <a href="#">Sport</a>
+        <a href="#">Travel</a>
+        <a href="#">Style</a>
+        <a href="#">Health</a>
+        <a href="#">Video</a>
+        <a style="border-right: 0px" href="#">VR </a>
+    </div>
+
+
+    <div id="right">
+        <a href="#">International Edition + </a>
+        <a href="#"><i class="fa fa-search"></i></a>
+        <a href="#">&#9776;</a>
+    </div>
+
+    
+</div>
+
+
+<div id="upper">
+
+<div id="leftu">
+    <h1><a href="#">Deadly weather chaos</a></h1>
+    <a href="#"><img src="https://cdn.cnn.com/cnnnext/dam/assets/180307115956-01-as-equals-lesotho-abortion-illustration-tease-large-tease.jpg"></a>
+    <div id="rlist">
+             <div><a href="#"><b style="font-size:16.2px;">Europe's icy blast: Death toll rises to 18</b></a></div>
+             <div><a href="#">'Bomb cyclone' kills 5, knocks out power in several US states</a></div>
+             <div><a href="#">Bare hands used to dig out man buried in avalanche in US</a></div>
+             <div><a href="#">Just what exactly is a 'bomb cyclone'?</a></div>
+        </div>
+</div>
+
+<div id="midu">
+    
+    <div style="background:#f4f4f4;">
+        <h2 style="display: inline-block; margin-top: 8px; color:#3c3c3c; font-family: arial; margin-left:8px;">Inside Syria</h2>
+        <a href="#"><img style="margin-top: -6px; width:100%" src="https://cdn.cnn.com/cnnnext/dam/assets/170626121920-us-troops-syria-tease-overlay-tease.jpg"></a>
+    </div>
+    <h2 style="margin-top: 7px; font-family:arial;font-size:21px;"><a href="#">'If you're going to kill us, make it quick -- we are sick of waiting on death row'</a> </h2>
+
+    <a href="#"><img style="margin-top: 10px; width:100%;" src="http://timedotcom.files.wordpress.com/2016/09/aleppo-syria-destruction-karam-al-masri.jpg"></a>
+    <h2 style="margin-top: 6px; font-family:arial;font-size:21px;"><a href="#">Shelling continues despite Putin's call for 'pause'</a></h2>
+
+</div>
+
+    <div id="rtu">
+
+        <div style="background:#f4f4f4;">
+            <h2 style="display: inline-block; margin-top: 7px; margin-left:8px; color:#3c3c3c; font-family: arial;">Top stories</h2>
+            <a href="#"><img style="margin-top: -6px; width:100%" src="https://cdn.cnn.com/cnnnext/dam/assets/180302095113-trump-steel-tariffs-large-tease.jpg"></a>
+        </div>
+        <h2 style="margin-top: 7px; font-family:arial;font-size:21px;"><a href="#">Trump hires digital guru to run 2020 re-election bid</a></h2>
+
+        <div style="margin-top: -9px;" id="rlist">
+             <div><a href="#">Police close probe and release star's body</a></div>
+             <div><a href="#">'WITCH HUNT': Trump resumes Russia outcry</a></div>
+             <div><a href="#">ANALYSIS: Trump tweets reveal obsession</a></div>
+             <div><a href="#">Germany approves diesel cars ban</a></div>
+             <div><a href="#">Saudi replaces military commanders</a></div>
+             <div><a href="#">US' top North Korea diplomat announces surprise retirement</a></div>
+             <div><a href="#">Ivanka Trump's S Korea trip fuels WH tension</a></div>
+        </div>
+    
+</div>
+
+</div>
+
+
+<div id="upper2">
+
+ <div id="midu2">
+
+        <div style="background:#f4f4f4;">
+            <h2 style="display: inline-block; margin-top: 7px; margin-left:8px; color:#3c3c3c; font-family: arial;">Around the world</h2>
+            <a href="#"><img style="margin-top: -6px; width:100%" src="https://cdn.cnn.com/cnnnext/dam/assets/180308122454-jupiter-medium-tease.jpg"></a>
+        </div>
+        <h2 style="margin-top: 7px; font-family:arial;font-size:21px;"><a href="#">Rome's sad decline sums up Italy's problems</a></h2>
+
+        <div style="margin-top: -9px;" id="rlist">
+             <div><a href="#">Only 13 people used Delta's NRA discount</a></div>
+             <div><a href="#">Scaramucci says he's banned from the WH</a></div>
+             <div><a href="#">$200M in supplies heading to Puerto Rico to fix the power grid</a></div>
+             <div><a href="#">Trump: Baldwin's impersonation 'terrible'</a></div>
+             <div><a href="#">Mega-colony of penguins found in Antarctic</a></div>
+             <div><a href="#">#MeToo stories you haven't heard</a></div>
+             <div><a href="#">EXCLUSIVE Ex-slave pays heavy price</a></div>
+        </div>
+    
+</div>
+
+
+<div id="leftu2">
+    <div style="background:#f4f4f4;">
+            <h2 style="display: inline-block; margin-top: 7px; margin-left:8px; color:#3c3c3c; font-family: arial;">Featured</h2>
+            <a href="#"><img style="margin-top: -6px; width:100%;" src="https://cdn.cnn.com/cnnnext/dam/assets/180307152734-cnnmoneymcdonalds-large-tease.jpg"></a>
+        </div>
+    <div style="height:8%; opacity:0.8; filter: alpha(opacity=80); margin-top:-48px; background:#f4f4f4;">
+        <a href="#"><p style="display:inline-block; font-family:arial;font-size:29.5px; margin-left: 10px; margin-top: 4px;">Reality of life in US prisons</p></a>
+    </div>
+    <div id="rlist">
+            <div style="margin-top:-12px; margin-left: -7px; border-top: 0px;">
+                <div style="border-top: 0px;"><a href="#"><img width="41%;" src="https://cdn.cnn.com/cnnnext/dam/assets/180308124815-01-mauritius-airport-file-restricted-small-tease.jpg"></a></div>
+                <div style="width:61%; border-top:0px; margin-top:-108px; margin-left:190px;"><a href="#">The urban population leading world in life expectancy</a></div>
+            </div> 
+            <div style="margin-top:30px; margin-left: -7px; border-top: 0px;">
+                <div style="border-top: 0px;"><a href="#"><img width="41%;" src="https://cdn.cnn.com/cnnnext/dam/assets/180308121200-neri-oxman-hp-tease-1-small-tease.jpg"></a></div>
+                <div style="width:61%; margin-top:-108px; margin-left:190px;"><a href="#">5,000-year-old tattoo discovered</a></div>
+            </div> 
+        </div>
+</div>
+
+
+<div id="rtu2">
+    
+    <div id="rlist">
+            
+                <div style="display:inline-block; border-top: 0px; margin-top:-4px; margin-left:0px;"><a href="#"><img width="60%;" src="https://cdn.cnn.com/cnnnext/dam/assets/180301163051-mike-schultz-2-small-11.jpg"></a></div>
+                <div style="width:73%; margin-top:-80px; margin-left:85px;line-height:18px;"><a href="#">Would the 'Hand of God' pass a video review?</a></div>
+           
+        </div>
+
+</div>
+
+</div>
+
+
+<div id="upper2">
+
+ <div id="midu2">
+
+        <div style="background:#f4f4f4;">
+            <h2 style="display: inline-block; margin-top: 7px; margin-left:5px; color:#3c3c3c; font-family: arial;">Take a closer look</h2>
+            <a href="#"><img style="margin-top: -6px; width:100%" src="https://cdn.cnn.com/cnnnext/dam/assets/171201161130-maradona-messi-medium-tease.jpg"></a>
+        </div>
+        <h2 style="margin-top: 7px; font-family:arial;font-size:21px;"><a href="#">World Cup countdown: 7 things to be excited about</a></h2>
+
+        <div style="margin-top: -26px;" id="rlist">
+             
+             <div style="border-top: 0px; margin-left:-2px;">
+                <div style="border-top: 0px;"><a href="#"><img width="25.5%;" height="12.6%" src="https://cdn.cnn.com/cnnnext/dam/assets/180303170456-asequals-iran-hijab-7-small-11.jpg"></a></div>
+                <div style="width:65%; margin-top:-82.5px; margin-left:73px;"><a href="#">'Acid, rape, abuse' threats: Protesting Iran's hijab law</a></div>
+            </div>
+
+            <div style="border-top: 0px; margin-top: 5px; margin-left:-2px;">
+                <div style="border-top: 0px;"><a href="#"><img width="25.5%;" height="12.6%" src="https://cdn.cnn.com/cnnnext/dam/assets/180305162808-02-philippines-teen-pregnancy-asequals-small-11.jpg"></a></div>
+                <div style="width:65%; margin-top:-83px; margin-left:73px;"><a href="#">16 and avoiding pregnancy in devout Philippines</a></div>
+            </div>
+
+            <div style="border-top: 0px; margin-top: 5px; margin-left:-2px;">
+                <div style="border-top: 0px;"><a href="#"><img width="25.5%;" height="12.6%" src="https://cdn.cnn.com/cnnnext/dam/assets/180306113403-indiana-small-11.jpg"></a></div>
+                <div style="width:65%; margin-top:-82px; margin-left:73px;"><a href="#">Growing up in Indiana Jones' 'lost city'</a></div>
+            </div>
+
+            <div style="border-top: 0px; margin-top: 5px; margin-left:-2px;">
+                <div style="border-top: 0px;"><a href="#"><img width="25.5%;" height="12.6%" src="https://cdn.cnn.com/cnnnext/dam/assets/180129171130-tea-bag-2-small-11.jpg"></a></div>
+                <div style="width:65%; margin-top:-82.5px; margin-left:73px;"><a href="#">Intricate art painted on tea bags</a></div>
+            </div>
+
+
+        </div>
+    
+</div>
+
+
+<div id="leftu2">
+    
+    <div style="background:#f4f4f4;">
+            <a href="#"><img style="width:100%; height: 44%;" src="https://cdn.cnn.com/cnnnext/dam/assets/150331165753-man-workout-file-large-169.jpg"></a>
+        </div>
+    <div style="height:8%; opacity:0.8; filter: alpha(opacity=80); margin-top:-48px; background:#fbfbfb;">
+        <a href="#"><p style="display:inline-block; font-family:arial;font-size:30.5px; margin-left: 10px; margin-top:5px;">Muscle up as age tears it down</p></a>
+    </div>
+
+    <div id="rlist">
+            <div style="margin-top:-12px; margin-left: -7px; border-top: 0px;">
+                <div style="border-top: 0px;"><a href="#"><img width="41%;" src="https://cdn.cnn.com/cnnnext/dam/assets/141028140121-ebola-outbreak-masks-1028-small-tease.jpg"></a></div>
+                <div style="width:60.5%; margin-top:-110px; margin-left:185px;"><a href="#">Predicting next deadly outbreak</a></div>
+            </div> 
+
+            <div style="margin-top:32px; margin-left: -7px; border-top: 0px;">
+
+                <div style="border-top: 0px;"><a href="#"><img width="41%;" src="https://cdn.cnn.com/cnnnext/dam/assets/180227121355-lax-private-terminal-01-small-tease.jpg"></a></div>
+                <div style="width:60.5%; margin-top:-109px; margin-left:185px;"><a href="#">Most luxurious airport terminal?</a></div>
+            </div> 
+
+            <div style="margin-top:32px; margin-left: -7px; border-top: 0px;">
+
+                <div style="border-top: 0px;"><a href="#"><img width="41%;" src="https://cdn.cnn.com/cnnnext/dam/assets/180306113708-kenya-cycling-3-small-tease.jpg"></a></div>
+                <div style="width:60.5%; margin-top:-109px; margin-left:185px;"><a href="#">Kenya's elite cyclists chase the world stage</a></div>
+            </div> 
+
+        </div>
+</div>
+
+
+<div id="rtu2">
+<div style="margin-left:6px;">
+    
+    <a id="op" href="#"><div style="width:100%;">
+            <div id="op1"><h2 style="display: inline-block; margin-top: 7px; margin-left:5px; color:#3c3c3c; font-family: arial;">Opinion</h2></div>
+
+            <div id="op2" style="width: 12.5%; font-size: 22px; padding:5px 0px;margin-top:-42px; margin-left: 264px;"> <div style="margin-left: 12px;"><b>></b></div> </div>
+            
+            <a href="#"><img style="width:100%" src="https://cdn.cnn.com/cnnnext/dam/assets/180305173832-sam-nunberg-jan-3-2018-medium-tease.jpg"></a>
+        </div></a>
+
+        <p style="margin-top: 7px; font-family:arial;font-size:21px;"><a href="#"><b>Jonathan Cristol:</b> Would Kim really ever give up his nukes?
+
+    
+      <div style="margin-top: -26px;" id="rlist">
+             
+             <div style="border-top: 0px; margin-left:-6px;">
+                <div style="border-top: 0px;"><a href="#"><img width="25.5%;" height="12.6%" src="https://cdn.cnn.com/cnnnext/dam/assets/180306040354-cnnmoney-bugatti-chiron-sport-small-11.jpg"></a></div>
+                <div style="width:75%; margin-top:-82.5px; margin-left:73px;"><a href="#">$3.4M Bugatti for the race track</a></div>
+            </div>
+
+            <div style="border-top: 0px; margin-top:34px; margin-left:-5px;">
+                <div style="border-top: 0px;"><a href="#"><img width="25.5%;" height="12.6%" src="https://cdn.cnn.com/cnnnext/dam/assets/180305144355-01-benjamin-netanyahu-donald-trump-0305-small-11.jpg"></a></div>
+                <div style="width:75%; margin-top:-81px; margin-left:73px;"><a href="#"><b>Z. Byron Wolf:</b> Trump and Netanyahu have big problems</a></div>
+            </div>
+
+            <div style="border-top: 0px; margin-top:17px; margin-left:-5px;">
+                <div style="border-top: 0px;"><a href="#"><img width="25.5%;" height="12.6%" src="https://cdn.cnn.com/cnnnext/dam/assets/180306075314-angela-merkel-military-2017-file-small-11.jpg"></a></div>
+                <div style="width:75%; margin-top:-80.5px; margin-left:73px;"><a href="#"><b>Sophia Besch:</b> Why Germany must spend more on defense</a></div>
+            </div>
+
+            <div style="border-top: 0px; margin-top:17px; margin-left:-5px;">
+                <div style="border-top: 0px;"><a href="#"><img width="25.5%;" height="12.6%" src="https://cdn.cnn.com/cnnnext/dam/assets/120719121144-dark-matter-hubble-topics.jpg"></a></div>
+                <div style="width:75%; margin-top:-81px; margin-left:73px;"><a href="#"><b>Don Lincoln:</b> A stunning look at the start of the universe</a></div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+</div>
+
+
+<div id="upper3">
+
+
+<div> 
+
+<div style="display:inline-block; font-size:27px; font-family:calibri light;"> <p>Featured Sections</p> </div>
+<div style="display:inline-block; background:#d8d8d8; height:0.7%; width:82%;"></div>
+<div style="background:#d8d8d8; height:0.7%; width:82%; margin-left:197px; margin-top:-43px;"></div>
+
+</div>
+
+
+<div style="margin-top: 28px;">
+
+ <div id="midu3">
+
+        <a id="op" href="#"><div style="width:100%;">
+            
+            <div id="op1"><h2 style="display: inline-block; margin-top: 7px; margin-left:5px; color:#3c3c3c; font-family: arial; font-size:17px;">Sport</h2></div>
+
+            <div id="op2" style="width: 11%; font-size: 22px; padding:4px 0px;margin-top:-40px; margin-left: 315px;"> <div style="margin-left: 12px;"><b>></b></div> </div>
+            
+            <a href="#"><img style="width:100%" src="https://cdn.cnn.com/cnnnext/dam/assets/180305180057-kapil-dev-tease-golf-story-large-tease.jpg"></a>
+        
+        </div></a>
+
+        <p style="margin-top: 7px; font-family:arial;font-size:20px;"><a href="#">Indian cricket legend's love for golf</a></p>
+
+        <div style="margin-top: -15px;" id="rlist">
+             <div><a href="#">Mickelson ends the longest drought of his career</a></div>
+             <div><a href="#">Federer starts defence of Sunshine Double</a></div>
+             <div><a href="#">How an unsolved murder inspired this rugby star</a></div>
+             <div><a href="#">Gen 2: The race car of the future</a></div>
+        </div>
+    
+</div>
+
+
+<div id="leftu3">
+
+    <a id="op" href="#"><div style="width:100%;">
+            
+            <div id="op1"><h2 style="display: inline-block; margin-top: 7px; margin-left:5px; color:#3c3c3c; font-family: arial; font-size:17px;">Travel</h2></div>
+
+            <div id="op2" style="width: 11%; font-size: 22px; padding:4px 0px;margin-top:-40px; margin-left: 315px;"> <div style="margin-left: 12px;"><b>></b></div> </div>
+            
+            <a href="#"><img style="width:100%" src="https://cdn.cnn.com/cnnnext/dam/assets/180223104204-krinhawaii-large-tease.jpg"></a>
+        
+        </div></a>
+
+        <p style="margin-top: 7px; font-family:arial;font-size:20px;"><a href="#">Women-only island opens in Finland</a></p>
+
+        <div style="margin-top: -15px;" id="rlist">
+             <div><a href="#">Sweden has a Klingon tourist center</a></div>
+             <div><a href="#">What it was like to fly Concorde</a></div>
+             <div><a href="#">5 great places to visit in April</a></div>
+             <div><a href="#">New jet airplane takes off like a helicopter</a></div>
+        </div>
+</div>
+
+
+<div id="rtu3">
+    
+    <div style="background:#f4f4f4;">
+            <h2 style="display: inline-block; margin-top: 7px; margin-left:8px; height:2.3%; color:#3c3c3c; font-family: arial; font-size:17px;"><a href="#">Weather</a></h2>
+    </div>
+    
+    <a id="op" href="#"><div style="font-family:calibri light;margin-top:15px;margin-left:12px;line-height: 0px;"><b>Islamabad, Pakistan <p style="font-size: 35px;">18*</p></b></div></a>
+
+    <div style="margin-top: -10px;"><a href="#"><img style="width:100%" src="https://cdn.cnn.com/cnn/.e/img/3.0/weather/egypt_tourism.png"></a></div>
+        
+</div>
+
+</div>
+
+</div>
+
+
+<div id="upper4">
+
+<div id="midu3">
+
+        <a id="op" href="#"><div style="width:100%;">
+            
+            <div id="op1"><h2 style="display: inline-block; margin-top: 7px; margin-left:5px; color:#3c3c3c; font-family: arial; font-size:17px;">Style</h2></div>
+
+            <div id="op2" style="width: 11%; font-size: 22px; padding:4px 0px;margin-top:-40px; margin-left: 315px;"> <div style="margin-left: 12px;"><b>></b></div> </div>
+            
+            <a href="#"><img style="width:100%" src="https://cdn.cnn.com/cnnnext/dam/assets/180129112648-blachford-nihonnoir-edo-tokyo-2-large-tease.jpg"></a>
+        
+        </div></a>
+
+        <p style="margin-top: 7px; font-family:arial;font-size:20px;"><a href="#">Night photos show the dark side of Tokyo</a></p>
+
+        <div style="margin-top: -15px;" id="rlist">
+             <div><a href="#">How Gary Oldman's makeup got him an Oscar</a></div>
+             <div><a href="#">Why the Soviet 'Concordski' crashed and burned</a></div>
+             <div><a href="#">Dozens of ancient Mayan cities discovered</a></div>
+             <div><a href="#">Why these scissors are a work of genius</a></div>
+        </div>
+    
+</div>
+
+<div id="leftu3">
+
+    <a id="op" href="#"><div style="width:100%;">
+            
+            <div id="op1"><h2 style="display: inline-block; margin-top: 7px; margin-left:5px; color:#3c3c3c; font-family: arial; font-size:17px;">CNNMoney</h2></div>
+
+            <div id="op2" style="width: 11%; font-size: 22px; padding:4px 0px;margin-top:-40px; margin-left: 315px;"> <div style="margin-left: 12px;"><b>></b></div> </div>
+            
+            <a href="#"><img style="width:100%" src="https://cdn.cnn.com/cnnnext/dam/assets/180306100634-01-trump-white-house-large-tease.jpg"></a>
+        
+        </div></a>
+
+        <p style="margin-top: 7px; font-family:arial;font-size:20px;"><a href="#">The biggest thing Trump gets wrong on trade</a></p>
+
+        <div style="margin-top: -15px;" id="rlist">
+             <div><a href="#">McDonald's is putting fresh beef in the Quarter Pounder</a></div>
+             <div><a href="#">Lego's sales drop for the first time in 13 years</a></div>
+             <div><a href="#">Bugatti reveals $3.4 million Chiron for the race track</a></div>
+             <div><a href="#">Why Domino's is winning the pizza wars</a></div>
+        </div>
+</div>
+
+<div id="rtu3">
+    
+    <a id="op" href="#"><div style="width:100%;">
+            
+            <div id="op1"><h2 style="display: inline-block; margin-top: 7px; margin-left:5px; color:#3c3c3c; font-family: arial; font-size:17px;">Health</h2></div>
+
+            <div id="op2" style="width: 11%; font-size: 22px; padding:4px 0px;margin-top:-40px; margin-left: 315px;"> <div style="margin-left: 12px;"><b>></b></div> </div>
+            
+            <a href="#"><img style="width:100%" src="https://cdn.cnn.com/cnnnext/dam/assets/160620150946-abortion-photo-illustration-large-tease.jpg"></a>
+        
+    </div></a>
+
+        <p style="margin-top: 7px; font-family:arial;font-size:20px;"><a href="#">US state proposing 15-week abortion ban</a></p>
+
+        <div style="margin-top: -15px;" id="rlist">
+             <div><a href="#">Do bagged salad greens hold their nutrients?</a></div>
+             <div><a href="#">The health benefits</a></div>
+             <div><a href="#">10 best foods for a healthy heart</a></div>
+             <div><a href="#">People in Hong Kong live the longest globally</a></div>
+             <div><a href="#">Why opposites don't attract</a></div>
+        </div>
+
+</div>
+
+</div>
+
+
+<div id="upper5">
+
+
+<div> 
+
+<div style="display:inline-block; font-size:27px; font-family:calibri light; width:8.5%;"> <p>Watch It</p> </div>
+
+<div style="display:inline-block; background:#d8d8d8; height:0.7%; width:91%;"></div>
+<div style="background:#d8d8d8; height:0.7%; width:91%; margin-left:98px; margin-top:-43px;"></div>
+
+</div>
+
+
+<a id="op" href="#"><div style="width:100%; margin-top:27px;">
+            
+            <div id="op1"><h2 style="height:2.5%; display: inline-block; margin-top: 8px; margin-left:6px; color:#3c3c3c; font-family: arial; font-size:17px;">Must see videos</h2></div>
+
+            <div id="op2" style="width: 3%; font-size: 22px; padding:4px 0px; margin-top:-36px; margin-left: 1066px;"> <div style="margin-left: 12px;"><b>></b></div> </div>
+        
+</div></a>
+
+<div id="v">
+
+    <div class="vid">
+        <a href="#"><img src="https://cdn.cnn.com/cnnnext/dam/assets/180305170531-zan-tv-as-equals-2-medium-tease.jpg"></a>
+        <p style="margin-top:7px;font-family:calibri light;font-size:23px;"><a href="#">Inside Afghanistan's only female TV station</a></p>
+    </div>
+    
+    <div class="vid" style="margin-left: 23px; margin-top:-10px;">
+        <a href="#"><img src="https://cdn.cnn.com/cnnnext/dam/assets/180307150015-north-korea-south-korea-what-does-north-korea-want-peace-talks-panmunjom-orig-lon-00000410-medium-tease.jpg"></a>
+        <p style="margin-top:7px;font-family:calibri light;font-size:23px;"><a href="#">What North Korea wants from the US</a></p>
+    </div>
+    
+    <div class="vid" style="margin-left: 23px;">
+        <a href="#"><img src="https://cdn.cnn.com/cnnnext/dam/assets/180306084029-01-sergei-skripal-file-medium-tease.jpg"></a>
+        <p style="margin-top:7px;font-family:calibri light;font-size:23px;"><a href="#">Who is Sergei Skripal?<br><br></a></p>
+    </div>    
+
+
+</div>
+
+
+<div style="margin-top:-10px; width:101%;">
+
+    <div class="vid">
+        <a href="#"><img src="https://cdn.cnn.com/cnnnext/dam/assets/180302142930-asequals-iran-hijab1-medium-tease.jpg"></a>
+        <p style="margin-top:7px;font-family:calibri light;font-size:23px;"><a href="#">Risking it all by rejecting the hijab</a></p>
+    </div>
+    
+    <div class="vid" style="margin-left: 23px; margin-top:-10px;">
+        <a href="#"><img src="https://cdn.cnn.com/cnnnext/dam/assets/171025173858-mohammed-bin-salman-2-medium-tease.jpg"></a>
+        <p style="margin-top:7px;font-family:calibri light;font-size:23px;"><a href="#">The 32-year-old trying to revamp Saudi Arabia</a></p>
+    </div>
+    
+    <div class="vid" style="margin-left: 23px;">
+        <a href="#"><img src="https://cdn.cnn.com/cnnnext/dam/assets/180209174340-nancy-gbd-2-medium-tease.jpg"></a>
+        <p style="margin-top:7px;font-family:calibri light;font-size:23px;"><a href="#">Could Mongolian yak wool be the new cashmere?</a></p>
+    </div>
+
+    <div class="vid" style="margin-left: 23px;">
+        <a href="#"><img src="https://cdn.cnn.com/cnnnext/dam/assets/170613162054-vision-the-future-of-japan-robot-nation-1-medium-tease.jpg"></a>
+        <p style="margin-top:7px;font-family:calibri light;font-size:23px;"><a href="#">Japan's search for the perfect robot</a></p>
+    </div>
+
+</div>        
+
+
+</div>
+
+
+
+<div id="upper5">
+
+
+<div style="margin-top:78px;"> 
+
+<div style="display:inline-block; font-size:27px; font-family:calibri light;"> <p>Photos you should see</p> </div>
+
+<div style="display:inline-block; background:#d8d8d8; height:0.7%; width:77%;"></div>
+<div style="background:#d8d8d8; height:0.7%; width:77%; margin-left:247px; margin-top:-43px;"></div>
+
+</div>
+
+<div style="margin-top: 38px;">
+
+    <div class="ph">
+        <a href="#"><img src="https://cdn.cnn.com/cnnnext/dam/assets/180306105952-formula-e-gen2-car-unveiled-2-medium-tease.jpg"></a>
+        <p style="margin-top:7px;font-family:calibri light;font-size:22px;"><a href="#">Formula E unveils 'Batmobile'</a></p>
+    </div>
+    
+    <div class="ph" style="margin-left: 24px; margin-top:-10px;">
+        <a href="#"><img src="https://cdn.cnn.com/cnnnext/dam/assets/180220003322-01-olympics-0220-unfurled-medium-tease.jpg"></a>
+        <p style="margin-top:7px;font-family:calibri light;font-size:22px;"><a href="#">Defining moments of the Winter Olympics</a></p>
+    </div>
+    
+    <div class="ph" style="margin-left: 24px;">
+        <a href="#"><img src="https://cdn.cnn.com/cnnnext/dam/assets/180209233353-corniche-medium-tease.jpg"></a>
+        <p style="margin-top:7px;font-family:calibri light;font-size:22px;"><a href="#">Beautiful reasons to visit Qatar</a></p>
+    </div>    
+
+
+</div>
+
+
+<div style="margin-top:-10px; width:101%;">
+
+    <div class="ph">
+        <a href="#"><img src="https://cdn.cnn.com/cnnnext/dam/assets/180205115805-sexton-tease-medium-tease.jpg"></a>
+        <p style="margin-top:7px;font-family:calibri light;font-size:22px;"><a href="#">Six Nations 2018: Story of the tournament</a></p>
+    </div>
+    
+    <div class="ph" style="margin-left: 24px; margin-top:-10px;">
+        <a href="#"><img src="https://cdn.cnn.com/cnnnext/dam/assets/170912205318-puebla-mexico-getty-medium-tease.jpg"></a>
+        <p style="margin-top:7px;font-family:calibri light;font-size:22px;"><a href="#">Best vacation spots for 2018</a></p>
+    </div>
+    
+    <div class="ph" style="margin-left: 24px;">
+        <a href="#"><img src="https://cdn.cnn.com/cnnnext/dam/assets/180111102804-gabart-arriving-in-port-medium-tease.jpg"></a>
+        <p style="margin-top:7px;font-family:calibri light;font-size:22px;"><a href="#">The man who sailed the world in 42 days</a></p>
+    </div>
+
+
+</div>        
+
+
+</div>
+
+
+
+
+<div id="upper5">
+
+
+<div style="margin-top:15px;"> 
+
+<div style="display:inline-block; font-size:27px; font-family:calibri light;"> <p>Paid Content</p> </div>
+
+<div style="display:inline-block; background:#d8d8d8; height:0.7%; width:87%;"></div>
+<div style="background:#d8d8d8; height:0.7%; width:87%; margin-left:143px; margin-top:-43px;"></div>
+
+</div>
+
+<div style="margin-top:26px; width:105%;">
+
+    <div class="pd">
+        <a href="#"><img title="The Unusual Link Between Eggs and Diabetes" src="https://images.outbrain.com/transform/v3/eyJpdSI6ImZiNTIzNmVjYjE0MWFlNDNjNmRhZmY2YTFmNGJjZmY2NWFkZDAxMTk3OTIxMGU1OWMzN2Y4ZjI2MWUyZGMzOTgiLCJ3IjozNzAsImgiOjIyMCwiZCI6MS41LCJjcyI6MCwiZiI6MH0.webp"></a>
+        <p title="The Unusual Link Between Eggs and Diabetes" style="line-height:22px;margin-top:7px;font-family:calibri light;font-size:22px;"><a href="#">The Unusual Link Between Eggs and Diabetes<p style="font-family:calibri;font-size:14px;margin-top:-20px;">healthnewstips.today</p></a></p>
+    </div>
+    
+    <div class="pd" style="margin-left:21px;">
+        <a href="#"><img title="Top 10 Mac Recommended Antivrius Providers (2018)" src="https://images.outbrain.com/transform/v3/eyJpdSI6ImUxMzU3NTk5MDg5NWJkMzU4MGVjZjU4ZTkyZDBkZjU4YWM3YTA2YWU2MWI5ODZhOTYwYTM3YmRlNzc3ZDhjODciLCJ3IjozNzAsImgiOjIyMCwiZCI6MS41LCJjcyI6MCwiZiI6MH0.webp"></a>
+        <p title="Top 10 Mac Recommended Antivrius Providers (2018)" style="line-height:22px;margin-top:7px;font-family:calibri light;font-size:22px;"><a href="#">Top 10 Mac Recommended Antivrius Providers (2018)<p style="font-family:calibri;font-size:14px;margin-top:-20px;">My Antivirus Review</p></a></p>
+    </div>
+    
+    <div class="pd" style="margin-left:21px;">
+        <a href="#"><img title="The Easiest Way To Find Anyone's Email Address." src="https://images.outbrain.com/transform/v3/eyJpdSI6ImFlMTQ3OTY0OTIzNjBkNDEyNzgwOTcxZjFkZjRkNDczNzM2MzY0OTQ1Nzg5YWNmMTExYjc0NTkyMDcyYTk0ZGQiLCJ3IjozNzAsImgiOjIyMCwiZCI6MS41LCJjcyI6MCwiZiI6MH0.webp"></a>
+        <p title="The Easiest Way To Find Anyone's Email Address." style="line-height:22px;margin-top:7px;font-family:calibri light;font-size:22px;"><a href="#">The Easiest Way To Find Anyone's Email Address.<p style="font-family:calibri;font-size:14px;margin-top:-20px;">Connect</p></a></p>
+    </div>
+
+    <div class="pd" style="margin-left:21px;">
+        <a href="#"><img title="Should Business Consulting Be Your Next Step?" src="https://images.outbrain.com/transform/v3/eyJpdSI6IjE1ODYzOWI0NGM2NWE1NmU3Y2FjNTU4YTdkYWQ4ZDRjODM0NDQ0NmEzZGYxNjgwOTBkZTUwMDAwMDNmNzQxN2UiLCJ3IjozNzAsImgiOjIyMCwiZCI6MS41LCJjcyI6MCwiZiI6MH0.webp"></a>
+        <p title="Should Business Consulting Be Your Next Step?" style="line-height:22px;margin-top:7px;font-family:calibri light;font-size:22px;"><a href="#">Should Business Consulting Be Your Next Step?<p style="font-family:calibri;font-size:14px;margin-top:-20px;">ASU Online</p></a></p>
+    </div> 
+
+
+</div>
+
+</div>
+
+
+<div id=footer>
+
+
+<div id="upper6">
+
+    <div> 
+
+
+    <div style="display:inline-block; margin-top:-15px; font-size:27px; font-family:calibri light; color:white;"> <p>In Case You Missed It</p> </div>
+
+    <div style="display:inline-block; background:#c30000; height:0.7%; width:78.9%;"></div>
+    <div style="background:#c30000; height:0.7%; width:78.9%; margin-left:231px; margin-top:-43px;"></div>
+
+
+
+    </div>
+
+
+<div id="leftu4">
+        <div>
+            <a href="#"><img style="width:100%; height: 44%;" src="https://cdn.cnn.com/cnnnext/dam/assets/180125162818-09-asequals-milestones-first-day-at-school-madagascar-soavy-overlay-tease.jpg"></a>
+        </div>
+    <div style="height:8%; opacity:0.8; filter: alpha(opacity=80); margin-top:-48px; background:#1c1c1c;">
+        <a href="#"><p style="display:inline-block; font-family:arial;font-size:30.5px; margin-left: 10px; margin-top:5px;">Life of a girl: 'My first day at school'</p></a>
+    </div>
+</div>
+
+
+    <div id="rtu4">
+    
+    <div>
+        <a href="#"><img style="margin-top: -6px; width:100%" src="https://cdn.cnn.com/cnnnext/dam/assets/171221152450-singapore-foreign-workers-banner-large-tease.jpg"></a>
+    </div>
+    <h2 style="margin-top: 7px; font-family:arial;font-size:19px;"><a href="#">Singapore's migrant workers struggle to get paid</a> </h2>
+
+    <a href="#"><img style="margin-top: 10px; width:100%;" src="https://cdn.cnn.com/cnnnext/dam/assets/180209114249-03-somalia-al-shabaab-foreign-aid-large-tease.jpg"></a>
+    <h2 style="margin-top: 6px; font-family:arial;font-size:19px;"><a href="#">How aid money ends up in terror group's hands</a></h2>
+    
+    </div>
+
+
+</div>
+
+</div>
+
+
+<div id="footer2">
+
+<div id="upper7" style="width: 80%">
+
+<div><pre><p style="font-size:15px; padding-top:30px;"><a href="#">Islamabad,Pakistan   22*</a></p></pre></div>
+
+<div style="margin-top:-42px; margin-left:780px; background:#1c1c1c;" >
+<form action="#">
+<input style="background:#1c1c1c; border:0px; width:92%; padding:8px; font-size:16px;" type="search" placeholder="Search CNN..." />
+<a href="#"><i class="fa fa-search"></i></a>
+</form>
+</div>
+
+<div style="margin-left:-40px; margin-top:30px;">
+
+<ul style="display:inline-block;">
+    <li style="font-size:23px;"><a style="color:white;" href="#">Regions</a></li>
+    <li><a href="#">U.S.</a></li>
+    <li><a href="#">Africa</a></li>
+    <li><a href="#">Americas</a></li>
+    <li><a href="#">Asia</a></li>
+    <li><a href="#">China</a></li>
+    <li><a href="#">Europe</a></li>
+    <li><a href="#">Middle East</a></li>
+    <li><a href="#">Opinion</a></li>
+    <br><br><br>
+</ul>
+
+<ul style="display:inline-block;">
+    <li style="font-size:23px;"><a style="color:white;" href="#">U.S. Politics</a></li>
+    <li><a href="#">45</a></li>
+    <li><a href="#">Security</a></li>
+    <li><a href="#">The Nine</a></li>
+    <li><a href="#">Trumpmerica</a></li>
+    <li><a href="#">2018</a></li>
+    <br><br><br><br><br><br><br><br>
+</ul>
+
+<ul style="display:inline-block;">
+    <li style="font-size:23px;"><a style="color:white;" href="#">Money</a></li>
+    <li><a href="#">Business</a></li>
+    <li><a href="#">Markets</a></li>
+    <li><a href="#">Tech</a></li>
+    <li><a href="#">Luxury</a></li>
+    <br><br><br><br><br><br><br><br><br><br>
+</ul>
+
+<ul style="display:inline-block;">
+    <li style="font-size:23px;"><a style="color:white;" href="#">entertainment</a></li>
+    <li><a href="#">Stars</a></li>
+    <li><a href="#">Screen</a></li>
+    <li><a href="#">Binge</a></li>
+    <li><a href="#">Culture</a></li>
+    <li><a href="#">Media</a></li>
+    <br><br><br><br><br><br><br><br>
+</ul>
+
+<ul style="display:inline-block;">
+    <li style="font-size:23px;"><a style="color:white;" href="#">tech</a></li>
+    <li><a href="#">Business</a></li>
+    <li><a href="#">Culture</a></li>
+    <li><a href="#">Gadgets</a></li>
+    <li><a href="#">Future</a></li>
+    <li><a href="#">Startups</a></li>
+    <br><br><br><br><br><br><br><br>
+</ul>
+
+<ul style="display:inline-block;">
+    <li style="font-size:23px;"><a style="color:white;" href="#">Sport</a></li>
+    <li><a href="#">Football</a></li>
+    <li><a href="#">Tennis</a></li>
+    <li><a href="#">Equestrian</a></li>
+    <li><a href="#">Golf</a></li>
+    <li><a href="#">Judo</a></li>
+    <li><a href="#">Horse Racing</a></li>
+    <li><a href="#">Motorsport</a></li>
+    <li><a href="#">Sailing</a></li>
+    <li><a href="#">Skiing</a></li>
+    <li><a href="#">Olympics</a></li>
+</ul>   
+
+</div> 
+
+
+<div style="margin-left:-40px; margin-top:-20px;">
+
+<ul style="display:inline-block;">
+    <li style="font-size:23px;"><a style="color:white;" href="#">travel</a></li>
+    <li><a href="#">Destinations</a></li>
+    <li><a href="#">Food</a></li>
+    <li><a href="#">Play</a></li>
+    <li><a href="#">Stay</a></li>
+    <li><a href="#">Videos</a></li>
+    <br><br><br><br>
+</ul>
+
+<ul style="display:inline-block;">
+    <li style="font-size:23px;"><a style="color:white;" href="#">style</a></li>
+    <li><a href="#">Arts</a></li>
+    <li><a href="#">Design</a></li>
+    <li><a href="#">Fashion</a></li>
+    <li><a href="#">Architecture</a></li>
+    <li><a href="#">Luxury</a></li>
+    <li><a href="#">Autos</a></li>
+    <li><a href="#">Video</a></li>
+    <br>
+</ul>
+
+<ul style="display:inline-block;">
+    <li style="font-size:23px;"><a style="color:white;" href="#">health</a></li>
+    <li><a href="#">Food</a></li>
+    <li><a href="#">Fitness</a></li>
+    <li><a href="#">Wellness</a></li>
+    <li><a href="#">Parenting</a></li>
+    <li><a href="#">Health</a></li>
+    <li><a href="#">Vital Signs</a></li>
+    <br><br><br>
+</ul>
+
+<ul style="display:inline-block;">
+    <li style="font-size:23px;"><a style="color:white;" href="#">Features</a></li>
+    <li><a href="#">Freedom Projects</a></li>
+    <li><a href="#">Impact Your World</a></li>
+    <li><a href="#">Binge</a></li>
+    <li><a href="#">Inside Africa</a></li>
+    <li><a href="#">2 degrees</a></li>
+    <li><a href="#">CNN Heroes</a></li>
+    <li><a href="#">All Features</a></li>
+    <br>
+</ul>
+
+<ul style="display:inline-block;">
+    <li style="font-size:23px;"><a style="color:white;" href="#">Video</a></li>
+    <li><a href="#">Video news</a></li>
+    <li><a href="#">Feature shows</a></li>
+    <li><a href="#">HLN</a></li>
+    <li><a href="#">TV shows</a></li>
+    <li><a href="#">TV schedule</a></li>
+    <li><a href="#">FAces of CNN Worldwide</a></li>
+    <li><a href="#">CNNVR</a></li>
+    <br>
+</ul>
+
+<ul style="margin-left:-80px; display:inline-block;">
+    <li style="font-size:23px;"><a style="color:white;" href="#">More...</a></li>
+    <li><a href="#">Weather</a></li>
+    <li><a href="#">CNN Profiles</a></li>
+    <li><a href="#">Leadership</a></li>
+    <li><a href="#">Pressroom</a></li>
+    <li><a href="#">Partner sites</a></li>
+    <li><a href="#">iReport</a></li>
+    <li><a href="#">Work for CNN</a></li>
+    <br>
+</ul>   
+
+</div>
+    
+</div>
+</div>
+
+</body>
+</html>
